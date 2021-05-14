@@ -514,7 +514,18 @@ a {
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
   transition: 0.3s ease-in;
 }
-
+.services__cardsml {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: 0.3s ease-in;
+}
 .services__card:nth-child(2) {
   background: #1fa2ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
