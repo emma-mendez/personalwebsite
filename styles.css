@@ -522,8 +522,8 @@ a {
 }
 .services__cardsml {
   margin: 10px;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
