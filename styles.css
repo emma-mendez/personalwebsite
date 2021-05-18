@@ -574,6 +574,15 @@ a {
   margin-top: 16px;
 }
 
+.services__git {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-left: 70px;
+  margin-right: 70px;
+
+}
+
 .services__card button {
   color: #fff;
   padding: 14px 24px;
