@@ -18,6 +18,10 @@ a {
   font-size: 4.2rem;
 
 }
+.iconify { 
+  width: 404px; 
+  height: 74px; 
+}
 .navbar {
   background: #131313;
   height: 80px;
