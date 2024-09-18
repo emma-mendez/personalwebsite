@@ -416,6 +416,12 @@ a {
   background: linear-gradient(to right, #dd2476, #ff512f);
 }
 
+img.center {
+  width: 150px;
+  height: auto;
+  align-content: center;
+}
+
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
   .main__container {
