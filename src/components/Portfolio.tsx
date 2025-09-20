@@ -25,9 +25,9 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "KLPS Ltd",
+      title: "Stealth company Ltd",
       category: "Biotechnology", 
-      description: "An innovative biotech venture at seed stage focused on developing cutting-edge solutions in life sciences. KLPS Ltd represents the intersection of technology and biology, working towards breakthrough innovations in healthcare.",
+      description: "An innovative biotech venture at seed stage focused on developing cutting-edge solutions in life sciences. Stealth company Ltd represents the intersection of technology and biology, working towards breakthrough innovations in healthcare.",
       website: "Coming Soon",
       icon: Microscope,
       status: "Seed Stage",

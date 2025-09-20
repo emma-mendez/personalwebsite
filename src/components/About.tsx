@@ -34,7 +34,7 @@ Starting her career with a BA (Hons) in Music and Professional Practice from Cov
 
 Her transition into software engineering at KPMG marked a pivotal moment in her career, where she quickly established herself as a leader in cultural change and technical innovation. Emma spearheaded the development of monorepo frameworks, led pro bono initiatives, and earned her AWS certification while representing diverse voices on company boards.
 
-As an entrepreneur, Emma is building the next generation of women-led ventures in tech and biotech through her companies Sovereign Studios Birmingham and KLPS Ltd. Her work focuses on creating inclusive spaces and innovative solutions that address real-world challenges.
+As an entrepreneur, Emma is building the next generation of women-led ventures in tech and biotech through her companies Sovereign Studios Birmingham and Stealth company Ltd. Her work focuses on creating inclusive spaces and innovative solutions that address real-world challenges.
 
 Emma's commitment to sharing knowledge and inspiring others has made her a sought-after speaker, where she discusses topics ranging from career reinvention to technical leadership and diversity in technology.`;
 
