@@ -63,6 +63,13 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      theme: {
+        extend: {
+          fontFamily: {
+            script: ['"Dancing Script"', "cursive"],
+          },
+        },
+      },
       keyframes: {
         "accordion-down": {
           from: {
@@ -86,6 +93,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    
   },
+  
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
