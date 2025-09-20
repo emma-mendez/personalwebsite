@@ -67,7 +67,7 @@ const Hero = () => {
           <CarouselContent>
             {heroSlides.map((slide, index) => (
               <CarouselItem key={index}>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center py-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-8">
                   {/* Text Content */}
                   <div className="space-y-6 order-2 lg:order-1">
                     <div className="space-y-2">
