@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { GraduationCap, Award, ChevronDown, ChevronUp } from "lucide-react";
+import { GraduationCap, Award, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   const [showFullBio, setShowFullBio] = useState(false);
 
   const education = [
@@ -39,6 +41,13 @@ Emma's commitment to sharing knowledge and inspiring others has made her a sough
   return (
     <section id="about" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Button size="lg" className="group"
+          onClick={() => {                          
+            navigate('/');
+          }}>
+          <ArrowLeft className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            Back
+        </Button>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">About Emma</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

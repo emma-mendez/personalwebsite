@@ -4,8 +4,10 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import emmaProfile from "@/assets/emma-profile.jpg";
 import { useEffect, useState } from "react";
 import { removeBackground, loadImageFromUrl } from "@/lib/backgroundRemoval";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [processedImageUrl, setProcessedImageUrl] = useState<string>("");
   const [isProcessing, setIsProcessing] = useState(true);
 
@@ -38,11 +40,19 @@ const Hero = () => {
 
   const heroSlides = [
     {
+      title: "Speaker",
+      subtitle: "Inspiring through stories of resilience and reinvention",
+      description: "Sharing insights on career transformation, tech engineering, and entrepreneurship. From music graduate to tech leader - demonstrating the power of adaptive reinvention.",
+      gradient: "from-primary/20 to-teal-500/20",
+      buttonText: "Book Speaking"
+    },
+    {
       title: "Software Engineer",
       subtitle: "Building scalable solutions with cutting-edge technology",
       description: "Leading technical innovation at KPMG with expertise in full-stack development, cloud architecture, and quality assurance. AWS Certified Developer driving digital transformation.",
       gradient: "from-primary/20 to-blue-500/20",
       buttonText: "View Technical Skills"
+    
     },
     {
       title: "Entrepreneur",
@@ -50,13 +60,6 @@ const Hero = () => {
       description: "Founder of KLPS Ltd, a pioneering biotech venture at seed stage, and Sovereign Studios Birmingham. Building women-led businesses that bridge technology and creativity.",
       gradient: "from-accent/20 to-purple-500/20",
       buttonText: "Explore Ventures"
-    },
-    {
-      title: "Speaker",
-      subtitle: "Inspiring through stories of resilience and reinvention",
-      description: "Sharing insights on career transformation, technical leadership, and entrepreneurship. From music graduate to tech leader - demonstrating the power of adaptive reinvention.",
-      gradient: "from-primary/20 to-teal-500/20",
-      buttonText: "Book Speaking"
     }
   ];
 
@@ -71,8 +74,12 @@ const Hero = () => {
                   {/* Text Content */}
                   <div className="space-y-6 order-2 lg:order-1">
                     <div className="space-y-2">
-                      <p className="text-2xl lg:text-3xl font-semibold text-primary">
-                        {slide.title}
+                      <p className={`text-2xl lg:text-3xl font-semibold ${
+                        index === 0 ? 'text-green-500' : 
+                        index === 1 ? 'text-pink-500' : 
+                        'text-orange-500'
+                      }`}>                        
+                      {slide.title}
                       </p>
                       <p className="text-lg text-muted-foreground font-medium">
                         {slide.subtitle}
@@ -81,12 +88,19 @@ const Hero = () => {
                     <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
                       {slide.description}
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4"
+                    onClick={() => 
+                      { const targetPage = index === 0 ? '/about' : index === 1 ? '/skills' : '/portfolio';
+                        navigate(targetPage);
+                      }}>
                       <Button size="lg" className="group">
                         {slide.buttonText}
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
-                      <Button variant="outline" size="lg">
+                      <Button variant="outline" size="lg"
+                      onClick={() => {                          
+                        navigate('/contact');
+                        }}>
                         Get in Touch
                       </Button>
                     </div>
@@ -107,7 +121,7 @@ const Hero = () => {
                             className="w-full h-full object-contain object-top"
                           />
                           {/* Dynamic Name Overlay */}
-                          <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateY(60px)' }}>
+                          <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateY(calc(60px + 12vh))' }}>
                             <div className="text-center animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
                               <h2 className="text-4xl lg:text-6xl font-bold text-white drop-shadow-2xl tracking-wide">
                                 EMMA
