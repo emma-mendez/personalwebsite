@@ -67,7 +67,7 @@ const Hero = () => {
           <CarouselContent>
             {heroSlides.map((slide, index) => (
               <CarouselItem key={index}>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center py-8">
                   {/* Text Content */}
                   <div className="space-y-6 order-2 lg:order-1">
                     <div className="space-y-2">
@@ -93,7 +93,7 @@ const Hero = () => {
                   </div>
 
                   {/* Profile Image */}
-                  <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                  <div>
                     <div className="relative w-96 h-[32rem] lg:w-[28rem] lg:h-[36rem]">
                       {isProcessing ? (
                         <div className="w-full h-full bg-muted animate-pulse rounded-lg flex items-center justify-center">
