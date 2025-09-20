@@ -95,6 +95,18 @@ Emma's commitment to sharing knowledge and inspiring others has made her a sough
               </CardContent>
             </Card>
           </div>
+          <div className="mt-6 max-w-3xl mx-auto">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/i62cuY1XfOo"
+                title="Emma Mendez Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
 
           {/* Education Section */}
           <div>
