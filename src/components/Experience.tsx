@@ -1,7 +1,10 @@
-import { Building, Calendar, MapPin } from "lucide-react";
+import { Building, Calendar, MapPin, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const Experience = () => {
+  const navigate = useNavigate();
   const experiences = [
     {
       title: "Software Engineer",
@@ -14,40 +17,48 @@ const Experience = () => {
         "Developed monorepo framework architecture", 
         "Spearheaded pro bono initiatives",
         "AWS certified developer",
+        "Board representation for diversity and inclusion",
         "Board representation for diversity and inclusion"
+
       ],
     },
-    {
-      title: "Employability Coach", 
-      company: "Gordon Franks Training",
-      location: "UK",
-      period: "2018 – 2021",
-      description: "Mentored young talent and designed innovative curriculum programs to enhance employability skills and career development pathways.",
-      highlights: [
-        "Mentored young professionals and graduates",
-        "Designed and delivered curriculum programs",
-        "Career development pathway creation",
-        "Skills assessment and training delivery"
-      ],
-    },
-    {
-      title: "Employment Coach",
-      company: "Pertemps",
-      location: "UK", 
-      period: "2015 – 2018",
-      description: "Guided clients in developing essential employability skills, providing personalized coaching and support to help individuals achieve their career goals.",
-      highlights: [
-        "One-on-one career coaching",
-        "Employability skills development",
-        "Job search strategy and support",
-        "Interview preparation and skills training"
-      ],
-    },
+    // {
+    //   title: "Employability Coach", 
+    //   company: "Gordon Franks Training",
+    //   location: "UK",
+    //   period: "2018 – 2021",
+    //   description: "Mentored young talent and designed innovative curriculum programs to enhance employability skills and career development pathways.",
+    //   highlights: [
+    //     "Mentored young professionals and graduates",
+    //     "Designed and delivered curriculum programs",
+    //     "Career development pathway creation",
+    //     "Skills assessment and training delivery"
+    //   ],
+    // },
+    // {
+    //   title: "Employment Coach",
+    //   company: "Pertemps",
+    //   location: "UK", 
+    //   period: "2015 – 2018",
+    //   description: "Guided clients in developing essential employability skills, providing personalized coaching and support to help individuals achieve their career goals.",
+    //   highlights: [
+    //     "One-on-one career coaching",
+    //     "Employability skills development",
+    //     "Job search strategy and support",
+    //     "Interview preparation and skills training"
+    //   ],
+    // },
   ];
 
   return (
     <section id="experience" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Button size="sm" className="group mb-9"
+          onClick={() => {                          
+            navigate('/');
+          }}>
+          <ArrowLeft className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </Button>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Experience</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

@@ -57,7 +57,7 @@ const Hero = () => {
     {
       title: "Entrepreneur",
       subtitle: "Innovating in biotech and creative industries",
-      description: "Founder of Stealth company Ltd, a pioneering biotech venture at seed stage, and Sovereign Studios Birmingham. Building women-led businesses that bridge technology and creativity.",
+      description: "Founder of Stealth company, a pioneering biotech venture at seed stage, and Sovereign Studios Birmingham. Building women-led businesses that bridge technology and creativity.",
       gradient: "from-accent/20 to-purple-500/20",
       buttonText: "Explore Ventures"
     }
@@ -90,18 +90,12 @@ const Hero = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4"
                     onClick={() => 
-                      { const targetPage = index === 0 ? '/about' : index === 1 ? '/skills' : '/portfolio';
+                      { const targetPage = index === 0 ? '/services' : index === 1 ? '/skills' : '/portfolio';
                         navigate(targetPage);
                       }}>
                       <Button size="lg" className="group">
                         {slide.buttonText}
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                      <Button variant="outline" size="lg"
-                      onClick={() => {                          
-                        navigate('/contact');
-                        }}>
-                        Get in Touch
                       </Button>
                     </div>
                   </div>

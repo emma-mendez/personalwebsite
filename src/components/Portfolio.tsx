@@ -1,4 +1,4 @@
-import { ExternalLink, Building, Microscope, ArrowRight, ArrowLeft } from "lucide-react";
+import { ExternalLink, Building, Microscope, ArrowRight, ArrowLeft, Mic, Mic2Icon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,25 +9,27 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Sovereign Studios Birmingham",
-      category: "Creative Technology",
-      description: "A premier creative studio space fostering innovation and collaboration in Birmingham's creative sector. Sovereign Studios provides state-of-the-art facilities and resources for artists, designers, and creative technologists.",
-      website: "sovereignstudios.co.uk",
-      icon: Building,
+      title: "Speaking engagements",
+      category: "Technology, Motivation, Panels",
+      description: "A dynamic speaker and panelist with a proven track record of inspiring and motivating audiences across technology, business, and community platforms. From high-impact keynotes to thought-provoking panels, she brings insight, energy, and authenticity to every stage.",
+      // website: "sovereignstudios.co.uk",
+      icon: Mic2Icon,
       status: "Live",
-      tags: ["Creative Space", "Community Building", "Technology", "Arts"],
+      tags: ["Corporate & Industry", "Motivation & Empowerment", "Technology", "Inclusion & Innovation"],
       highlights: [
-        "Modern creative studio facilities",
-        "Community-driven approach",
-        "Supporting local creative economy", 
-        "Technology integration"
+        "Panelist: Birmingham Black Business Conference; Birmingham Tech Week",
+        "Facilitator of Motivational Mornings at KPMG through the IT’s Her Future programme",
+        "Keynote speaker: Niyo Enterprise: Birmingham Says No Female Empowerment event",
+        "Former radio presenter at Newstyle Radio", 
+        "Hosted 'On The Settee' at Civic Square",
+        "Lead facilitator of 5 global #IAmRemarkable workshops"
       ]
     },
     {
       id: 2,
-      title: "Stealth company Ltd",
+      title: "Stealth company",
       category: "Biotechnology", 
-      description: "An innovative biotech venture at seed stage focused on developing cutting-edge solutions in life sciences. Stealth company Ltd represents the intersection of technology and biology, working towards breakthrough innovations in healthcare.",
+      description: "An innovative biotech venture at seed stage focused on developing cutting-edge solutions in life sciences. Stealth company represents the intersection of technology and biology, working towards breakthrough innovations in healthcare.",
       website: "Coming Soon",
       icon: Microscope,
       status: "Seed Stage",
@@ -42,10 +44,11 @@ const Portfolio = () => {
   ];
 
   const achievements = [
-    { label: "Years in Tech", value: "3+" },
-    { label: "Projects Led", value: "15+" },
-    { label: "Teams Mentored", value: "50+" },
-    { label: "Speaking Events", value: "25+" }
+// { label: "Years of Professional Speaking", value: "5+" },
+{ label: "Keynotes & Panels Delivered", value: "15+" },
+{ label: "Corporate & Community Audiences Reached", value: "5,000+" },
+{ label: "Workshops Facilitated (#IAmRemarkable)", value: "5 Global Sessions" },
+{ label: "Media & Broadcast Experience", value: "2+ Years" },
   ];
 
   return (
@@ -121,7 +124,7 @@ const Portfolio = () => {
                         </p>
 
                         <div className="space-y-3 mb-6">
-                          <h4 className="font-semibold text-foreground">Key Features:</h4>
+                          <h4 className="font-semibold text-foreground">Highlights:</h4>
                           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {project.highlights.map((highlight, highlightIndex) => (
                               <li key={highlightIndex} className="flex items-start space-x-2">
@@ -171,7 +174,10 @@ const Portfolio = () => {
                 Emma is always open to discussing new opportunities, partnerships, and innovative projects 
                 that make a meaningful impact.
               </p>
-              <Button size="lg" className="group">
+              <Button size="lg" className="group"          
+                onClick={() => {                          
+                  navigate('/contact');
+                }}>
                 Start a Conversation
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>

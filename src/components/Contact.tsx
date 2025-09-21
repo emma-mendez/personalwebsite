@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import { Mail, Linkedin, MapPin, Phone, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,8 +24,31 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+
+    emailjs
+      .send(
+        "service_uee24s7",    // Replace with your EmailJS Service ID
+        "template_x598viv",   // Replace with your EmailJS Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: "emmamendez07@gmail.com"
+        },
+        "0m68tZs3aqG_yzht9"   // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          console.log("Message sent!", result.text);
+          alert("Your message has been sent successfully!");
+          setFormData({ name: "", email: "", subject: "", message: "" }); // reset form
+        },
+        (error) => {
+          console.log("Failed...", error.text);
+          alert("Something went wrong, please try again.");
+        }
+      );
   };
 
   const contactInfo = [
