@@ -57,7 +57,7 @@ const Hero = () => {
     {
       title: "Entrepreneur",
       subtitle: "Innovating in biotech and creative industries",
-      description: "Founder of Stealth company, a pioneering biotech venture at seed stage, and Sovereign Studios Birmingham. Building women-led businesses that bridge technology and creativity.",
+      description: "Founder of stealth company, a pioneering biotech venture at seed stage. Building women-led businesses that bridge technology and creativity.",
       gradient: "from-accent/20 to-purple-500/20",
       buttonText: "Explore Ventures"
     }

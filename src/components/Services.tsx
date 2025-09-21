@@ -61,7 +61,7 @@ const handleSubmit = (e: React.FormEvent) => {
     //   icon: Briefcase,
     //   title: "Entrepreneur",
     //   subtitle: "Building women-led tech and biotech ventures",
-    //   description: "As a passionate entrepreneur, Emma is building the next generation of innovative companies. Through Sovereign Studios Birmingham and Stealth company, she's creating inclusive spaces and developing cutting-edge solutions in technology and biotechnology.",
+    //   description: "As a passionate entrepreneur, Emma is building the next generation of innovative companies. Through her stealth company, she's creating inclusive spaces and developing cutting-edge solutions in technology and biotechnology.",
     //   features: [
     //     "Business strategy and planning",
     //     "Product development guidance",
