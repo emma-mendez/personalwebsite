@@ -69,12 +69,11 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Button size="lg" className="group"
+        <Button size="sm" className="group"
           onClick={() => {                          
             navigate('/');
           }}>
           <ArrowLeft className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            Back
         </Button>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Skills & Expertise</h2>
