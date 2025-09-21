@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-foreground">Emma Mendez</h3>
             <p className="text-muted-foreground">
-              Software Engineer • Entrepreneur • Speaker
+              Speaker • Entrepreneur • Software Engineer  
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Transforming challenges into innovation through resilience, 
@@ -24,11 +24,11 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground">Quick Links</h4>
             <ul className="space-y-2">
               {[
-                { name: "About", href: "#about" },
-                { name: "Experience", href: "#experience" },
-                { name: "Services", href: "#services" },
-                { name: "Portfolio", href: "#portfolio" },
-                { name: "Contact", href: "#contact" }
+                { name: "About", href: "/about" },
+                { name: "Experience", href: "/experience" },
+                { name: "Services", href: "/services" },
+                { name: "Portfolio", href: "/portfolio" },
+                { name: "Contact", href: "/contact" }
               ].map((link) => (
                 <li key={link.name}>
                   <a 
@@ -55,7 +55,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
               </a>
               <a
-                href="mailto:hello@emmamendez.com"
+                href="mailto:emmamendez07@gmail.com"
                 className="p-2 bg-primary/10 rounded-lg hover:bg-primary/20 transition-colors group"
               >
                 <Mail className="h-5 w-5 text-primary group-hover:scale-110 transition-transform" />
@@ -74,7 +74,7 @@ const Footer = () => {
               © {currentYear} Emma Mendez. All rights reserved.
             </div>
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <span>Built with</span>
+              <span>Built by Emma with</span>
               <Heart className="h-4 w-4 text-red-500" />
               <span>and modern web technologies</span>
             </div>

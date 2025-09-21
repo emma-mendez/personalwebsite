@@ -51,7 +51,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Button size="sm" className="group"
+        <Button size="sm" className="group mb-9"
           onClick={() => {                          
             navigate('/');
           }}>
