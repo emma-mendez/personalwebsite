@@ -39,7 +39,7 @@ const Contact = () => {
       icon: Mail, 
       label: "Email",
       value: "hello@emmamendez.com",
-      href: "mailto:hello@emmamendez.com"
+      href: "mailto:emmamendez07@gmail.com"
     },
     {
       icon: MapPin,
