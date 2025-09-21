@@ -12,7 +12,7 @@ const Portfolio = () => {
       title: "Speaking engagements",
       category: "Technology, Motivation, Panels",
       description: "A dynamic speaker and panelist with a proven track record of inspiring and motivating audiences across technology, business, and community platforms. From high-impact keynotes to thought-provoking panels, she brings insight, energy, and authenticity to every stage.",
-      // website: "sovereignstudios.co.uk",
+      website: "Most recent speaking engagement",
       icon: Mic2Icon,
       status: "Live",
       tags: ["Corporate & Industry", "Motivation & Empowerment", "Technology", "Inclusion & Innovation"],
@@ -149,8 +149,10 @@ const Portfolio = () => {
                         </div>
                         
                         {project.website !== "Coming Soon" && (
-                          <Button variant="outline" size="sm" className="group">
-                            Visit Project
+                          <Button variant="outline" size="sm" className="group"onClick={() => {                          
+                            navigate('/about');
+                          }}>
+                            See 'X - Tech' Talk
                             <ExternalLink className="ml-2 h-3 w-3 group-hover:scale-110 transition-transform" />
                           </Button>
                         )}
