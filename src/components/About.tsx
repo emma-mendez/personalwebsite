@@ -110,22 +110,22 @@ Emma's commitment to sharing knowledge and inspiring others has made her a sough
           {/* Logos Section */}
           <div className="mt-8 flex flex-wrap justify-center items-center gap-8">
             <img
-              src="public/images/kpmg.png"
+              src="/images/kpmg.png"
+              alt="KPMG"
+              className="h-16 object-contain"
+            />
+            <img
+              src="/images/barclays.png"
               alt="Barclays"
               className="h-16 object-contain"
             />
             <img
-              src="public/images/barclays.png"
-              alt="Barclays"
-              className="h-16 object-contain"
-            />
-            <img
-              src="public/images/birmingham-tech-week.png"
+              src="/images/birmingham-tech-week.png"
               alt="Birmingham Tech Week"
               className="h-16 object-contain"
             />
             <img
-              src="public/images/niyo.png"
+              src="/images/niyo.png"
               alt="Niyo"
               className="h-16 object-contain"
             />
