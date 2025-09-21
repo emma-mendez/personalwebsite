@@ -107,6 +107,25 @@ Emma's commitment to sharing knowledge and inspiring others has made her a sough
               />
             </div>
           </div>
+          {/* Logos Section */}
+          <div className="mt-8 flex flex-wrap justify-center items-center gap-8">
+            <img
+              src="/src/assets/Barclays.png"
+              alt="Barclays"
+              className="h-16 object-contain"
+            />
+            <img
+              src="/src/assets/birmingham-tech-week.png"
+              alt="Birmingham Tech Week"
+              className="h-16 object-contain"
+            />
+            <img
+              src="/src/assets/niyo.png"
+              alt="Niyo"
+              className="h-16 object-contain"
+            />
+          </div>
+
 
           {/* Education Section */}
           <div>
