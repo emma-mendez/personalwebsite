@@ -22,7 +22,8 @@ const Portfolio = () => {
         "Keynote speaker: Niyo Enterprise: Birmingham Says No Female Empowerment event",
         "Former radio presenter at Newstyle Radio", 
         "Hosted 'On The Settee' at Civic Square",
-        "Lead facilitator of 5 global #IAmRemarkable workshops"
+        "Lead facilitator of 5 global #IAmRemarkable workshops",
+        "Operations Board member for Matthew Bolton College,  facilitaing talks, initiatives & workshops."
       ]
     },
     {
