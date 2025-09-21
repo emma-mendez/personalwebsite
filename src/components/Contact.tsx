@@ -1,13 +1,15 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import { Mail, Linkedin, MapPin, Phone, Send } from "lucide-react";
+import { Mail, Linkedin, MapPin, Phone, Send, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -80,6 +82,12 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <Button size="sm" className="group mb-9"
+          onClick={() => {                          
+            navigate('/');
+          }}>
+          <ArrowLeft className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+        </Button>
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Get in Touch</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
