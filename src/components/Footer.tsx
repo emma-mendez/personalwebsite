@@ -76,7 +76,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <span>Built by Emma with</span>
               <Heart className="h-4 w-4 text-red-500" />
-              <span>& Modern Tech</span>
+              <span>& Modern Tech.</span>
             </div>
           </div>
         </div>
